@@ -154,44 +154,7 @@ export default function Login({ onLoginSuccess }: LoginProps) {
             </div>
           </form>
 
-          {/* Quick Login Helper Panel */}
-          <div className="mt-8 border-t border-slate-100 pt-6">
-            <h3 className="text-xs font-semibold text-slate-400 uppercase tracking-wider text-center">
-              Akses Cepat Pengujian (Demo)
-            </h3>
-            <div className="mt-4 grid grid-cols-3 gap-2.5">
-              <button
-                onClick={() => handleQuickLogin("admin")}
-                className="flex flex-col items-center justify-center p-2.5 rounded-2xl bg-blue-50/50 border border-blue-100 hover:bg-blue-100/50 transition-all duration-200 active:scale-95 group"
-              >
-                <Shield size={18} className="text-blue-600 group-hover:scale-110 transition-transform" />
-                <span className="mt-1 text-[10px] font-semibold text-blue-700">Admin</span>
-              </button>
-
-              <button
-                onClick={() => handleQuickLogin("guru")}
-                className="flex flex-col items-center justify-center p-2.5 rounded-2xl bg-emerald-50/50 border border-emerald-100 hover:bg-emerald-100/50 transition-all duration-200 active:scale-95 group"
-              >
-                <GraduationCap size={18} className="text-emerald-600 group-hover:scale-110 transition-transform" />
-                <span className="mt-1 text-[10px] font-semibold text-emerald-700">Guru</span>
-              </button>
-
-              <button
-                onClick={() => handleQuickLogin("kepsek")}
-                className="flex flex-col items-center justify-center p-2.5 rounded-2xl bg-amber-50/50 border border-amber-100 hover:bg-amber-100/50 transition-all duration-200 active:scale-95 group"
-              >
-                <UserIcon size={18} className="text-amber-600 group-hover:scale-110 transition-transform" />
-                <span className="mt-1 text-[10px] font-semibold text-amber-700">Kepsek</span>
-              </button>
-            </div>
-            
-            {/* Display Credentials Details for quick access */}
-            <div className="mt-3.5 px-3 py-2 bg-slate-50 rounded-xl text-[10px] text-slate-500 font-mono text-center">
-              Password: <span className="font-semibold text-slate-700">username123</span> (Contoh: <span className="font-semibold text-slate-700">admin123</span>)
-            </div>
-          </div>
-        </motion.div>
-      </div>
+         
 
       <div className="text-center mt-8 text-xs text-slate-400 z-10">
         SIA-MIS &copy; 2026 • Dirancang untuk Kecepatan & Keamanan
